@@ -63,7 +63,7 @@ class BaseComparisons(object):
         Calculate weighted p.
     """
 
-    def __init__(self, fingerprints, c_threshold=None, w_factor="fraction"):
+    def __init__(self, fingerprints, c_threshold=None, w_factor="fraction",scale_factor=None):
         """Initialize the object.
 
         Parameters
@@ -92,6 +92,7 @@ class BaseComparisons(object):
         self.set_weighted_dis_counters()
         self.set_total_sim_counter()
         self.set_total_weighted_sim_counter()
+        self.set_total_weighted_scaled_sim_counter(scale_factor)
         self.total_dis_counters()
         self.total_weighted_dis_counters()
         self.set_p()
@@ -304,6 +305,16 @@ class BaseComparisons(object):
         """Calculate the total number of (weighted) similarity counters."""
         self.total_w_sim = self.w_a + self.w_d
 
+    def set_total_weighted_scaled_sim_counter(self,scale_factor):
+        if not scale_factor:
+            self.scale_factor = 1
+        if isinstance(scale_factor, str):
+            raise TypeError("scale_factor must be None, 'dissimilar', or an integer.")
+        if isinstance(scale_factor, float):
+            self.scale_factor = scale_factor
+        self.total_w_s_sim = self.w_a + self.scale_factor*self.w_d
+    
+    
     def total_dis_counters(self):
         """Calculate total number of (unweighted) dissimilarity counters."""
         self.total_dis = np.sum(self.dis_counters)

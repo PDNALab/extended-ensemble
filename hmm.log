@@ -1,0 +1,17 @@
+/blue/alberto.perezant/liweichang/msm/MultipleComparisons
+c41a-s33.ufhpc
+Sun Oct 25 22:04:14 EDT 2020
+/home/liweichang/anaconda3/envs/torch/bin/python
+[I 22:04:18.078 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 22:04:18.087 NotebookApp] Serving notebooks from local directory: /blue/alberto.perezant/liweichang/msm/MultipleComparisons
+[I 22:04:18.087 NotebookApp] Jupyter Notebook 6.1.4 is running at:
+[I 22:04:18.087 NotebookApp] http://c41a-s33.ufhpc:8888/?token=d834a26e4a58ea5c5510822d219ac0114fdb3416bd3eabfb
+[I 22:04:18.087 NotebookApp]  or http://127.0.0.1:8888/?token=d834a26e4a58ea5c5510822d219ac0114fdb3416bd3eabfb
+[I 22:04:18.087 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:04:18.101 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/liweichang/.local/share/jupyter/runtime/nbserver-33208-open.html
+    Or copy and paste one of these URLs:
+        http://c41a-s33.ufhpc:8888/?token=d834a26e4a58ea5c5510822d219ac0114fdb3416bd3eabfb
+     or http://127.0.0.1:8888/?token=d834a26e4a58ea5c5510822d219ac0114fdb3416bd3eabfb

@@ -15,7 +15,9 @@
 pwd; hostname; date
                    
 source ~/.bashrc 
-conda activate torch      
+#conda activate torch      
+conda activate msm
 which python
-export PYTHONPATH=/home/liweichang/anaconda3/envs/torch/lib/python3.6/site-packages/:$PYTHONPATH
+export PYTHONPATH=/home/liweichang/anaconda3/envs/msm/lib/python3.7/site-packages/:$PYTHONPATH
+#export PYTHONPATH=/home/liweichang/anaconda3/envs/torch/lib/python3.6/site-packages/:$PYTHONPATH
 jupyter notebook --ip $(hostname) --no-browser

@@ -1,438 +1,112 @@
 /blue/alberto.perezant/liweichang/msm/MultipleComparisons
-c38a-s21.ufhpc
-Wed Oct 28 23:01:39 EDT 2020
+c41a-s21.ufhpc
+Sun Nov  8 21:33:46 EST 2020
 /home/liweichang/anaconda3/envs/msm/bin/python
-[I 23:01:44.194 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
-[I 23:01:44.258 NotebookApp] Serving notebooks from local directory: /blue/alberto.perezant/liweichang/msm/MultipleComparisons
-[I 23:01:44.258 NotebookApp] Jupyter Notebook 6.1.1 is running at:
-[I 23:01:44.258 NotebookApp] http://c38a-s21.ufhpc:8888/?token=b32906e7d43fe80ce631ccc4b5fc8060b08a27925ef8dac4
-[I 23:01:44.258 NotebookApp]  or http://127.0.0.1:8888/?token=b32906e7d43fe80ce631ccc4b5fc8060b08a27925ef8dac4
-[I 23:01:44.258 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 23:01:44.270 NotebookApp] 
+[I 21:34:25.013 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 21:34:25.069 NotebookApp] Serving notebooks from local directory: /blue/alberto.perezant/liweichang/msm/MultipleComparisons
+[I 21:34:25.069 NotebookApp] Jupyter Notebook 6.1.1 is running at:
+[I 21:34:25.069 NotebookApp] http://c41a-s21.ufhpc:8888/?token=5a2276554dffa9f2ceae5da0b3ffffaa51ac62310bc8a349
+[I 21:34:25.069 NotebookApp]  or http://127.0.0.1:8888/?token=5a2276554dffa9f2ceae5da0b3ffffaa51ac62310bc8a349
+[I 21:34:25.069 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:34:25.098 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/liweichang/.local/share/jupyter/runtime/nbserver-99375-open.html
+        file:///home/liweichang/.local/share/jupyter/runtime/nbserver-80801-open.html
     Or copy and paste one of these URLs:
-        http://c38a-s21.ufhpc:8888/?token=b32906e7d43fe80ce631ccc4b5fc8060b08a27925ef8dac4
-     or http://127.0.0.1:8888/?token=b32906e7d43fe80ce631ccc4b5fc8060b08a27925ef8dac4
-[I 23:03:25.054 NotebookApp] 302 GET / (172.16.206.10) 0.63ms
-[I 23:03:25.093 NotebookApp] 302 GET /tree? (172.16.206.10) 0.76ms
-[I 23:04:13.773 NotebookApp] 302 POST /login?next=%2Ftree%3F (172.16.206.10) 1.04ms
-[W 23:04:20.287 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:04:21.134 NotebookApp] Kernel started: fa23e659-f842-44d8-a6d5-cd76ff19ff80, name: python3
-[I 23:06:22.134 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:06:22.135 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:38:21.311 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:38:21.330 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:40:21.573 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:40:21.595 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:42:22.401 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:42:22.415 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:44:21.624 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:44:21.646 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:46:21.854 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:46:21.855 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:48:21.464 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:48:21.465 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:50:22.873 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:50:22.875 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:56:21.388 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:56:21.407 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:58:22.309 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:58:22.309 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:00:21.638 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:00:21.639 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:02:22.037 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:02:22.047 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:04:21.934 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:04:21.936 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:14:21.668 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:14:21.684 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:16:21.522 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:16:21.523 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:18:21.517 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:18:21.518 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:24:21.591 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:24:21.688 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:26:22.097 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:26:22.098 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:28:21.892 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:28:21.893 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:30:21.923 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:30:21.924 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:32:21.596 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:32:21.598 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:34:21.576 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:34:21.577 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:36:21.681 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:36:21.681 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:38:21.539 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:38:21.539 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:40:21.541 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:40:21.541 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:42:29.960 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:42:29.961 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:44:21.736 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:44:21.755 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:46:21.688 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:46:21.690 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:52:21.586 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:52:21.587 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:54:21.629 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:54:21.630 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:56:21.537 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:56:21.538 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:00:21.732 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:00:21.733 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:02:21.592 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:02:21.593 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:04:21.529 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:04:21.529 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:06:21.699 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:06:21.701 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:08:21.564 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:08:21.566 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:09:44.791 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:09:44.792 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:10:21.577 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:10:21.577 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:12:21.552 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:12:21.553 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:14:21.647 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:14:21.648 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:15:39.952 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 01:15:39.953 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 01:15:44.746 NotebookApp] Starting buffering for fa23e659-f842-44d8-a6d5-cd76ff19ff80:c01480902a434c64ab95810bfbf77ee6
-[I 10:25:44.041 NotebookApp] 302 GET / (172.16.206.10) 0.62ms
-[W 10:25:48.257 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:27:49.407 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:27:49.408 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:33:49.314 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:33:49.315 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:37:49.335 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:37:49.335 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:43:49.361 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:43:49.362 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:45:49.335 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:45:49.336 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:47:49.321 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:47:49.322 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:49:49.451 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:49:49.451 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:51:49.310 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:51:49.311 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:53:49.323 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:53:49.323 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:55:49.350 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:55:49.351 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:57:49.330 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:57:49.330 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:59:49.329 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:59:49.329 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:01:49.308 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:01:49.308 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:03:49.327 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:03:49.328 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:05:51.932 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:05:51.932 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:09:50.137 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:09:50.138 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:11:49.352 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:11:49.352 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:15:50.162 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:15:50.162 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:29:49.374 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:29:49.375 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:33:49.375 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:33:49.375 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:35:49.363 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:35:49.363 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:37:49.440 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:37:49.440 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:39:49.366 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:39:49.367 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:41:49.374 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:41:49.375 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:43:49.380 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:43:49.380 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:47:49.371 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:47:49.372 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:49:50.935 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:49:50.935 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:51:49.439 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:51:49.440 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:53:49.383 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:53:49.384 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:55:49.388 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:55:49.389 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:55:57.842 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:55:57.842 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:57:49.421 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:57:49.422 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:59:49.384 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:59:49.384 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:03:49.440 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:03:49.441 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:05:49.614 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:05:49.615 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:13:49.437 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:13:49.438 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:16:25.406 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:16:25.406 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 14:37:05.712 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 14:37:05.713 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 15:02:53.588 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 15:02:53.588 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 15:05:03.840 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 15:05:03.841 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 15:05:06.148 NotebookApp] Starting buffering for fa23e659-f842-44d8-a6d5-cd76ff19ff80:db177d34f1ea4d99b822c96db72bd89a
-[I 21:27:42.876 NotebookApp] 302 GET / (172.16.206.10) 0.62ms
-[W 21:27:46.760 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-slurmstepd: error: *** JOB 60500720 ON c38a-s5 CANCELLED AT 2020-10-29T21:28:38 ***
-[I 22:44:20.852 NotebookApp] New terminal with automatic name: 1
-[I 22:44:38.201 NotebookApp] EOF on FD 13; stopping reading
-[I 22:44:38.302 NotebookApp] Terminal 1 closed
-[I 22:44:49.324 NotebookApp] Creating new file in 
-[I 22:48:46.696 NotebookApp] Saving file at /hie_multiclustering.py
-[I 22:51:49.156 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 22:51:49.157 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 22:53:49.081 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 22:53:49.081 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:03:49.795 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:03:49.795 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:05:51.754 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:05:51.755 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:17:48.551 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:17:48.551 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:19:48.304 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:19:48.304 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:21:48.239 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:21:48.240 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:23:48.204 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:23:48.204 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:24:20.535 NotebookApp] Creating new notebook in 
-[I 23:24:22.221 NotebookApp] Kernel started: a64429a8-f80d-4418-ae76-a1cb527de07b, name: python3
-[I 23:25:49.057 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:25:49.057 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:26:22.179 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:28:22.182 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:30:22.185 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:32:22.843 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:36:22.823 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:37:50.695 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:37:50.696 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:38:22.821 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:40:22.266 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:42:22.201 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:49:48.144 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:49:48.145 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:50:22.837 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:51:48.774 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:51:48.775 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:52:22.199 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:53:48.167 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:53:48.168 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:54:22.501 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:55:24.713 NotebookApp] Saving file at /Untitled.ipynb
-[I 23:55:49.933 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:55:49.934 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:56:22.212 NotebookApp] Saving file at /clustering_functions.ipynb
-[I 23:56:23.206 NotebookApp] Saving file at /clustering_functions.ipynb
-[I 23:57:48.347 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:57:48.348 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 23:59:48.791 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 23:59:48.791 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:01:49.041 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:01:49.041 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:03:48.664 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:03:48.664 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:05:48.380 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:05:48.380 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:07:48.277 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:07:48.277 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:09:48.537 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:09:48.537 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:11:48.348 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:11:48.348 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:13:48.978 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:13:48.978 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:14:24.659 NotebookApp] Saving file at /clustering_functions.ipynb
-[I 00:15:49.487 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:15:49.488 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:17:48.195 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:17:48.195 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:19:48.164 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:19:48.165 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:23:48.177 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:23:48.177 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:25:49.455 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:25:49.456 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:27:48.157 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:27:48.157 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:29:48.157 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:29:48.157 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:31:48.139 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:31:48.139 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:33:48.093 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:33:48.093 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:35:48.100 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:35:48.100 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:37:48.090 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:37:48.090 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:39:48.077 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:39:48.077 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:41:48.106 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:41:48.106 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:42:44.697 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:42:44.698 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:42:59.131 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:42:59.132 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:43:13.476 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:43:13.476 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:43:14.662 NotebookApp] Starting buffering for fa23e659-f842-44d8-a6d5-cd76ff19ff80:698b830c4e32466d94e799062c9d8a59
-[I 00:43:16.507 NotebookApp] Starting buffering for a64429a8-f80d-4418-ae76-a1cb527de07b:1473e1b362d142ba848d5399ad90ceec
-[I 09:52:52.149 NotebookApp] 302 GET / (172.16.206.9) 0.63ms
-[W 09:52:56.941 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:08:58.105 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:08:58.106 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:10:57.992 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:10:57.992 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:12:58.798 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:12:58.799 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:16:58.940 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:16:58.941 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:20:59.898 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:20:59.899 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:22:59.921 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:22:59.922 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:24:58.000 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:24:58.001 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:27:00.725 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:27:00.725 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:31:00.766 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:31:00.766 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:35:00.542 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:35:00.542 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:36:58.154 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:36:58.154 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:40:58.034 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:40:58.034 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:42:58.028 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:42:58.028 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:43:26.786 NotebookApp] Kernel interrupted: fa23e659-f842-44d8-a6d5-cd76ff19ff80
-[I 10:44:58.063 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:44:58.064 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:46:58.012 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:46:58.012 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:48:58.076 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:48:58.077 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:50:58.008 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:50:58.009 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:52:58.073 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:52:58.074 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:54:58.046 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:54:58.046 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:56:58.008 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:56:58.009 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 10:58:58.018 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 10:58:58.018 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:00:58.016 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:00:58.016 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:02:58.008 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:02:58.008 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:08:58.843 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:08:58.843 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:10:58.110 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:10:58.110 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:12:58.004 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:12:58.005 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:14:58.011 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:14:58.012 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:20:58.025 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:20:58.026 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:22:58.013 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:22:58.014 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:24:58.107 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:24:58.108 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:26:58.275 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:26:58.275 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:28:58.048 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:28:58.048 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:30:58.048 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:30:58.048 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:32:58.045 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:32:58.046 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:34:58.100 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:34:58.101 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:35:58.843 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:35:58.844 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:36:59.716 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:36:59.717 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:38:58.038 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:38:58.039 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:40:58.045 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:40:58.046 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:42:58.038 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:42:58.039 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:46:58.940 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:46:58.940 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:48:59.440 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:48:59.440 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:50:58.786 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:50:58.786 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:52:58.910 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:52:58.910 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:54:58.362 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:54:58.362 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:56:58.465 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:56:58.465 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 11:58:59.708 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 11:58:59.708 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:00:58.169 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:00:58.170 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:02:58.144 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:02:58.144 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:04:58.126 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:04:58.126 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:06:58.174 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:06:58.174 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:08:06.472 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:08:06.472 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:16:58.115 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:16:58.115 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:18:58.136 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:18:58.137 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:20:58.132 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:20:58.133 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:22:58.190 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:22:58.191 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:24:50.053 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:24:50.053 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:24:58.106 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:24:58.107 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:30:56.891 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:30:56.891 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:32:58.115 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:32:58.116 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 12:33:05.632 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 12:33:05.633 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 13:08:58.348 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 13:08:58.348 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 13:10:58.159 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 13:10:58.160 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 13:20:58.182 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 13:20:58.182 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 13:22:58.175 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 13:22:58.176 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 13:30:59.491 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 13:30:59.491 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 13:36:58.166 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 13:36:58.167 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 15:42:58.629 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 15:42:58.630 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 15:43:53.883 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 15:43:53.883 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:58:11.553 NotebookApp] Saving file at /Hierachical_clustering.ipynb
-[W 00:58:11.575 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
-[I 00:58:17.709 NotebookApp] Starting buffering for fa23e659-f842-44d8-a6d5-cd76ff19ff80:47e574e0d4dd4d0188b1cd1b5a94ab45
-[I 00:58:22.078 NotebookApp] Starting buffering for a64429a8-f80d-4418-ae76-a1cb527de07b:185b16e0960f4e5f9c49c34c57e42b4e
+        http://c41a-s21.ufhpc:8888/?token=5a2276554dffa9f2ceae5da0b3ffffaa51ac62310bc8a349
+     or http://127.0.0.1:8888/?token=5a2276554dffa9f2ceae5da0b3ffffaa51ac62310bc8a349
+[I 21:34:54.391 NotebookApp] 302 GET / (172.16.206.11) 0.36ms
+[W 21:35:06.310 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 21:35:07.297 NotebookApp] Kernel started: 2859d4ce-3386-49f8-88f2-da92bf6d7937, name: python3
+[I 21:35:11.141 NotebookApp] Kernel started: 83b8d228-429c-4540-bbca-08e5026c9bd7, name: python3
+[I 21:39:11.174 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:43:11.226 NotebookApp] Saving file at /clustering_functions.ipynb
+slurmstepd: error: *** JOB 60869953 ON c41a-s1 CANCELLED AT 2020-11-08T21:43:34 DUE TO TIME LIMIT ***
+[I 21:45:11.179 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:47:11.173 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:49:11.182 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:51:11.177 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:53:11.183 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:55:11.223 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:57:11.197 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 21:59:11.193 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:01:11.197 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:03:11.197 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:05:11.196 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:11:11.193 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:13:11.203 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:15:11.239 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:17:11.207 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:19:11.201 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:21:11.228 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:23:11.217 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:25:11.229 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:27:11.216 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:29:11.266 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:31:11.240 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:33:11.241 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:47:11.615 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:48:27.079 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:49:07.845 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 22:49:07.845 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 22:49:11.245 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:49:37.897 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:54:52.822 NotebookApp] Creating new notebook in 
+[I 22:54:54.110 NotebookApp] Kernel started: ab1f70a0-a7ce-4ed7-8441-649113574fae, name: python3
+[I 22:56:18.923 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:56:26.955 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:56:42.807 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 22:56:54.115 NotebookApp] Saving file at /two_test_results.ipynb
+[I 23:02:23.126 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:02:23.127 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:02:40.860 NotebookApp] Saving file at /clustering.py
+[I 23:03:11.323 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:07:11.487 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:09:11.259 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:11:11.267 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:13:11.269 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:17:11.294 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:19:11.267 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:21:11.277 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:23:11.277 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:25:11.273 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:31:11.279 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:33:07.843 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:33:07.844 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:35:07.794 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:35:07.794 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:37:07.770 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:37:07.770 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:39:07.618 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:39:07.619 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:39:11.522 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 23:41:07.571 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:41:07.571 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:43:07.591 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:43:07.592 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:45:07.597 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:45:07.597 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:46:24.551 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:46:24.551 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:51:07.608 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:51:07.608 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:53:07.658 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:53:07.659 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:55:06.247 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:55:06.248 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 23:57:07.725 NotebookApp] Saving file at /Hierachical_clustering.ipynb
+[W 23:57:07.725 NotebookApp] Notebook Hierachical_clustering.ipynb is not trusted
+[I 00:01:11.543 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 00:04:27.038 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 00:05:54.763 NotebookApp] Kernel started: 8d035997-8274-4b1c-bec2-c5d3fc5ea2d2, name: python3
+[I 00:06:10.662 NotebookApp] Starting buffering for 8d035997-8274-4b1c-bec2-c5d3fc5ea2d2:e0cecf9ade2e497a8d2282aa00726509
+[I 00:06:14.820 NotebookApp] Kernel shutdown: 8d035997-8274-4b1c-bec2-c5d3fc5ea2d2
+[W 00:06:59.664 NotebookApp] delete /clustering_functions.py
+[W 00:06:59.665 NotebookApp] Skipping trash for /blue/alberto.perezant/liweichang/msm/MultipleComparisons/clustering_functions.py, on different device to home directory
+[I 00:07:07.781 NotebookApp] Saving file at /clustering_functions.ipynb
+[I 00:10:13.359 NotebookApp] Starting buffering for 83b8d228-429c-4540-bbca-08e5026c9bd7:3cef89082d1b4263855920cb44ac6134
+[W 00:10:43.696 NotebookApp] delete /clustering.py
+[W 00:10:43.696 NotebookApp] Skipping trash for /blue/alberto.perezant/liweichang/msm/MultipleComparisons/clustering.py, on different device to home directory
+[W 00:11:14.556 NotebookApp] delete /hie_multiclustering.py
+[W 00:11:14.556 NotebookApp] Skipping trash for /blue/alberto.perezant/liweichang/msm/MultipleComparisons/hie_multiclustering.py, on different device to home directory
+[I 00:12:54.193 NotebookApp] Saving file at /two_test_results.ipynb

@@ -18,9 +18,11 @@ from matplotlib import gridspec
 from matplotlib import pyplot
 import mdtraj
 import seaborn as sns
+import pandas  as pd
 
 
-def feature(traj_loc, pdb_loc, sieve_res=2, sieve_traj=10,threshold=0.6):
+
+def feature(traj_loc, pdb_loc, sieve_res=2, random=None, sieve_traj=10, threshold=0.6):
     '''
     Contact fingeprint calculation.
     ---
@@ -47,7 +49,11 @@ def feature(traj_loc, pdb_loc, sieve_res=2, sieve_traj=10,threshold=0.6):
     pairs = np.array(pairs)
     feature=feat.add_residue_mindist(pairs, scheme='closest-heavy',threshold=threshold,periodic=False)
     inp = pyemma.coordinates.load(traj_loc, features=feat)
-    inp = inp[::sieve_traj]
+    if random:
+        random_index = np.random.randint(0,len(inp),random)
+        inp = inp[random_index]
+    else:
+        inp = inp[::sieve_traj]
     return inp
 
 
@@ -66,6 +72,7 @@ def binary_simi_matrix(inp,simi_scale='no_scaled',batch_size=1000000):
     Output:
     simi_matrix: similarity matrix with size np.array((n,n)).
     '''
+    all_start=time.time()
     all_input = list(itertools.combinations(inp, 2))
     batch_size=1000000
     inp_sliced=[all_input[i*batch_size:(i+1)*batch_size] for i in range(int(len(all_input)/batch_size))]
@@ -82,6 +89,8 @@ def binary_simi_matrix(inp,simi_scale='no_scaled',batch_size=1000000):
             all_c = temp_c
         else:
             all_c = np.concatenate((all_c,temp_c),axis=0)
+    all_end = time.time() 
+    all_time = all_end - all_start 
     ###calculate similarity
     if simi_scale == 'no_scaled':
         simi = all_c[:,0]+all_c[:,2]
@@ -93,7 +102,7 @@ def binary_simi_matrix(inp,simi_scale='no_scaled',batch_size=1000000):
     indices = np.triu_indices(len(inp),k=1)
     indices = (indices[1],indices[0])
     simi_matrix[indices] = simi
-    return simi_matrix
+    return simi_matrix, all_time
 
 
 def agglomerative(inp,simi_matrix):
@@ -109,12 +118,14 @@ def agglomerative(inp,simi_matrix):
     tree: clustering results for constructing dentrogram in scipy style.
     hie_tree: sample index in each cluster along clustering process.
     dic: record which two sets are grouped together.
+    all_time: clustering time
     '''
     df = pd.DataFrame(simi_matrix,columns=pd.MultiIndex.from_tuples([('{}'.format(i),'{}'.format(i)) for i in range(1,len(inp)+1)],names=['cluster', 'frame']))
     inp_copy=inp
     dic={}
     hie_tree=[]
     dentrom=[]
+    all_start=time.time()
     while df.shape[0] > 2:
         ###update df
         frame_column=[i[1] for i in df.columns.to_list()]
@@ -155,13 +166,15 @@ def agglomerative(inp,simi_matrix):
         df = df.sort_index()  # sort by index
         df.insert(loc=0, column=(insert_cluster_index,insert_index), value=temp_w_sim)
         dic[insert_index]=max_value
+    all_end = time.time() 
+    all_time = all_end - all_start 
     dentrogram = np.vstack(dentrom)-np.ones((1,2))
     values = np.array([*dic.values()],ndmin=2)
     num_frames = np.array([len(i) for i in [[int(d) for d in [*k.split(',')]] for k in list(dic.keys())]],ndmin=2)
     tree = np.hstack((dentrogram,values.T,num_frames.T))
     last_two = [int(i[0]) for i in df.columns.to_list()]
     tree = np.vstack((tree, [[last_two[0]-1,last_two[1]-1,df.to_numpy()[1][0],len(inp)]]))
-    return tree, hie_tree, dic
+    return tree, hie_tree, dic, all_time
 
 
 def plot_simi_threshold(tree,p,min_simi,save=False):

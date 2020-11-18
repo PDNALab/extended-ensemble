@@ -94,15 +94,18 @@ def binary_simi_matrix(inp,simi_scale='no_scaled',batch_size=1000000):
     ###calculate similarity
     if simi_scale == 'no_scaled':
         simi = all_c[:,0]+all_c[:,2]
+        dis_simi = all_c[:,1]
     elif simi_scale == "Faith":
         all_simi = all_c[:,0]+0.5*all_c[:,2]
         denominate = all_c[:,0]+all_c[:,1]+all_c[:,2]
         simi = all_simi/denominate
     simi_matrix = np.zeros((len(inp),len(inp)))
+    dis_simi_matrix = np.zeros((len(inp),len(inp)))
     indices = np.triu_indices(len(inp),k=1)
     indices = (indices[1],indices[0])
     simi_matrix[indices] = simi
-    return simi_matrix, all_time
+    dis_simi_matrix[indices] = dis_simi
+    return simi_matrix, dis_simi_matrix[-1].min(), all_time
 
 
 def agglomerative(inp,simi_matrix):

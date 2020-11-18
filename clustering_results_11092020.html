@@ -13074,19 +13074,6 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13152,8 +13139,11 @@ div#notebook {
 <li><p>Initialization binary similarity matrix speed test --- complexity $O(n^2)$, pretty fast with multi-binary comparison implementation (can be ignored compared with cost in following clustering step)</p>
 <p><img src="test_initialization_speed.png" alt=""></p>
 </li>
+</ul>
+<hr>
+<ul>
 <li><p>start agglomerative hierachical clustering by updating the above like binary similarity matrix. At each clustering step, calculating the similarity of group any two clusters.</p>
-<p>The size of cluster will become larger along clustering process, just like the words from Ramon's note, if we have two sets, A and B, each with Na and Nb elements, respectively, this will scale as $O(NaNb) \approx O(N^2)$, which leads current algorithm scaled as $O(N^3)$ in total. However, if we link the sets by considering which of them will be more similar after we combine them, and we use the multiple comparisons described above, this will scale as $O(Na + Nb) \approx O(N)$, which leads our implementation scaled as $O(N^2)$ in total.</p>
+<p>The size of cluster will become larger along clustering process, just like the words from Ramon's note, if we have two sets, A and B, each with Na and Nb elements, respectively, this will scale as $O(NaNb) \approx O(N^2)$, which leads current algorithm scaled as $O(N^3)$ in total. However, if we link the sets by considering which of them will be more similar after we combine them, and we use the multiple comparisons described above, this will scale as $O(Na + Nb) \approx O(N)$, which leads our implementation scaled as $O(N^2)$ in total. I believe this can be further improved by implemented with data structure like heap with some scrifice of memory, then the number of clustering steps N will scale to $logN$ and the overall complexity will be $O(NlogN)$</p>
 <p>I found this paper seems to be the current fastest implementation. <a href="https://www.jstatsoft.org/article/view/v053i09">https://www.jstatsoft.org/article/view/v053i09</a></p>
 </li>
 </ul>
@@ -13163,6 +13153,14 @@ div#notebook {
 <p><img src="test_clustering_speed.png" alt=""></p>
 </li>
 </ul>
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Clustering-quality-test">Clustering quality test<a class="anchor-link" href="#Clustering-quality-test">&#182;</a></h2><ul>
 <li><p>case 1: 1000 protein samples with rmsd compared to native structure.</p>
 <p><img src="test_proteinG_sample_rmsd.png" alt=""></p>
@@ -13182,6 +13180,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
+<hr>
 <ul>
 <li><p>case 2: 1000 protein-DNA binding samples with rmsd compared to native structure.</p>
 <p><img src="test_binding_sample_rmsd.png" alt=""></p>
@@ -13201,7 +13200,16 @@ div#notebook {
 </tr>
 </tbody>
 </table>
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Clustering-accuracy-for-all-clustering-step">Clustering accuracy for all clustering step<a class="anchor-link" href="#Clustering-accuracy-for-all-clustering-step">&#182;</a></h2><p><img src="test_proteinG_1000samples_accuracy.png" alt=""></p>
+<hr>
 <ul>
 <li><p>This simply implies that as more samples goes into one cluster, the cluster will become less clean. But overall, it's almost maintain ~ 90%.</p>
 </li>
@@ -13222,6 +13230,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
+<hr>
 
 </div>
 </div>

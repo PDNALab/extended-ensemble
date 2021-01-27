@@ -57,7 +57,7 @@ def feature(traj_loc, pdb_loc, sieve_res=2, random=None, sieve_traj=10, threshol
     return inp
 
 
-def binary_simi_matrix(inp,simi_scale='no_scaled',batch_size=1000000):
+def binary_simi_matrix(inp,simi_scale='no_scaled',scale=None,batch_size=1000000):
     '''
     Binary similarity matrix calculation.
     ---
@@ -99,13 +99,16 @@ def binary_simi_matrix(inp,simi_scale='no_scaled',batch_size=1000000):
         all_simi = all_c[:,0]+0.5*all_c[:,2]
         denominate = all_c[:,0]+all_c[:,1]+all_c[:,2]
         simi = all_simi/denominate
+    elif simi_scale == 'scaled':
+        simi = scale*all_c[:,0]+all_c[:,2]
+        dis_simi = all_c[:,1]
     simi_matrix = np.zeros((len(inp),len(inp)))
     dis_simi_matrix = np.zeros((len(inp),len(inp)))
     indices = np.triu_indices(len(inp),k=1)
     indices = (indices[1],indices[0])
     simi_matrix[indices] = simi
     dis_simi_matrix[indices] = dis_simi
-    return simi_matrix, dis_simi_matrix[-1].min(), all_time
+    return simi_matrix, dis_simi_matrix, all_time
 
 
 def agglomerative(inp,simi_matrix):
@@ -169,6 +172,10 @@ def agglomerative(inp,simi_matrix):
         df = df.sort_index()  # sort by index
         df.insert(loc=0, column=(insert_cluster_index,insert_index), value=temp_w_sim)
         dic[insert_index]=max_value
+        if df.shape[0] % 100 == 0:
+            all_end = time.time()
+            all_time = all_end - all_start
+            print('merge {} clusters time ='.format(df.shape[0]), round(all_time,2),'s')
     all_end = time.time() 
     all_time = all_end - all_start 
     dentrogram = np.vstack(dentrom)-np.ones((1,2))
@@ -179,6 +186,11 @@ def agglomerative(inp,simi_matrix):
     tree = np.vstack((tree, [[last_two[0]-1,last_two[1]-1,df.to_numpy()[1][0],len(inp)]]))
     return tree, hie_tree, dic, all_time
 
+
+def get_step_index(hie_tree,cluster_step):
+    label_index = [[int(i)-1 for i in hie_tree[cluster_step][d].split(',')] for d in range(len(hie_tree[cluster_step]))]
+    label_index = sorted(label_index, key=lambda x:len(x), reverse=True)
+    return label_index
 
 def plot_simi_threshold(tree,p,min_simi,save=False):
     '''

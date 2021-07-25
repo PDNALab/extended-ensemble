@@ -111,7 +111,7 @@ def binary_simi_matrix(inp,simi_scale='no_scaled',scale=None,batch_size=1000000)
     return simi_matrix, dis_simi_matrix, all_time
 
 
-def agglomerative(inp,simi_matrix):
+def agglomerative(inp,simi_matrix,simi_measure='both'):
     '''
     Perform agglomerative hierachical clustering.
     ---
@@ -164,7 +164,12 @@ def agglomerative(inp,simi_matrix):
         ###perform comparison
         for i in temp_inp:
             compare=bc(np.concatenate(([inp_copy[d-1] for d in delete_all],i),axis=0))
-            temp_w_sim.append(compare.total_w_sim)         ###1s
+            if simi_measure == 'both':
+                temp_w_sim.append(compare.total_w_sim)         ###1s
+            elif simi_measure == 'one':
+                temp_w_sim.append(compare.w_a)
+            elif simi_measure == 'zero':
+                temp_w_sim.append(compare.w_d)
 
         temp_w_sim=[0]+temp_w_sim
         df.loc[-1] = [0]*df.shape[1] # add a row
@@ -178,12 +183,12 @@ def agglomerative(inp,simi_matrix):
             print('merge {} clusters time ='.format(df.shape[0]), round(all_time,2),'s')
     all_end = time.time() 
     all_time = all_end - all_start 
+    last_two = [int(i[0]) for i in df.columns.to_list()]
     dentrogram = np.vstack(dentrom)-np.ones((1,2))
-    values = np.array([*dic.values()],ndmin=2)
+    values = np.max(simi_matrix)-np.array([*dic.values()],ndmin=2)+2
     num_frames = np.array([len(i) for i in [[int(d) for d in [*k.split(',')]] for k in list(dic.keys())]],ndmin=2)
     tree = np.hstack((dentrogram,values.T,num_frames.T))
-    last_two = [int(i[0]) for i in df.columns.to_list()]
-    tree = np.vstack((tree, [[last_two[0]-1,last_two[1]-1,df.to_numpy()[1][0],len(inp)]]))
+    tree = np.vstack((tree, [[last_two[0]-1,last_two[1]-1,np.max(simi_matrix)-df.to_numpy()[1][0],len(inp)]]))
     return tree, hie_tree, dic, all_time
 
 

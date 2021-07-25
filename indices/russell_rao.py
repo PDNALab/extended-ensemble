@@ -80,9 +80,9 @@ class RussellRao(BaseComparisons):
             Type of weight function that will be used.
         """
         super().__init__(fingerprints, c_threshold, w_factor)
-        self.rr_sim_wdis()
+        #self.rr_sim_wdis()
         self.rr_1sim_wdis()
-        self.rr_sim_dis()
+        #self.rr_sim_dis()
         self.rr_1sim_dis()
 
     def rr_1sim_wdis(self):

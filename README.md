@@ -1,22 +1,11 @@
-# Clustering with MultipleComparisons
+# Bio-ensemble analysis with extended similarity
 
 # About
-MultipleComparisons allows to calculate and process extended (e.g., n-ary) similarity indices.
-The basic theory is detailed in: "Extended similarity indices: the benefits of comparing more than two objects simultaneously. Part 1: Theory and characteristics", R. A. Miranda-Quintana, D. Bajusz, A. Rácz, K. Héberger; J. Cheminformatics (in preparation)
+Improving the analysis of biological ensembles through extended similarity measures. L. Chang, A. Perez, R. A. Miranda-Quintana. (in preparation)
 
 # License
 MultipleComparisons is distributed under GPL License version 3 (GPLv3).
 
-# Dependencies
-Python >= 3.3;  http://www.python.org/
-
-Numpy >= 1.9.1;  http://www.numpy.org/
-
-SciPy >= 0.11.0;  http://www.scipy.org/
-
-Matplotlib >= 1.0;  http://matplotlib.org/
-
-Pandas>= 1.1.3; https://pandas.pydata.org/
 
 # Usage
 The folder "indices" contains the classes used to calculate and process the n-ary indices.
